@@ -1,5 +1,4 @@
 const { Sequelize } = require('sequelize');
-const pg = require('pg');
 require('dotenv').config();
 
 const sequelize = new Sequelize(process.env.PG_DB, process.env.PG_USER,process.env.PG_PASSWORD, {
@@ -8,9 +7,9 @@ const sequelize = new Sequelize(process.env.PG_DB, process.env.PG_USER,process.e
     define: {
         underscored: true
     }
-    
-    
 });
+
+// Testing the connection
 sequelize
   .authenticate()
   .then(function(err) {

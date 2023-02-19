@@ -13,7 +13,9 @@ CREATE TABLE "pokemon" (
   "attaque_spe" int NOT NULL,
   "defense_spe" int NOT NULL,
   "vitesse" int NOT NULL,
-  "numero" int NOT NULL
+  "numero" int NOT NULL,
+  "created_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz
 );
 
 --
@@ -183,7 +185,9 @@ DROP TABLE IF EXISTS "pokemon_type";
 CREATE TABLE "pokemon_type" (
   "id" int NOT NULL,
   "pokemon_numero" int NOT NULL,
-  "type_id" int NOT NULL
+  "type_id" int NOT NULL,
+  "created_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz
 );
 
 --
@@ -418,7 +422,9 @@ DROP TABLE IF EXISTS "type";
 CREATE TABLE "type" (
   "id" int NOT NULL,
   "name" varchar(255) NOT NULL,
-  "color" varchar(6) NOT NULL
+  "color" varchar(6) NOT NULL,
+  "created_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" timestamptz
 );
 
 --
