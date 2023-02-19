@@ -23,17 +23,11 @@ const mainController = {
                 { association: 'types' } 
             ]
         });
-        console.log(details.types[1]);
         res.render('detailsPokemon', { details });
             
         } catch (error) {
             console.log(error);
         }
-
-        // const onePokemon = await dataMapper.getOnePokemon(numero);
-        // const pokemonType = await dataMapper.getPokemonType(numero);
-
-
     },
 
 

@@ -1,18 +1,31 @@
-const dataMapper = require('../dataMapper/dataMapper.js');
+const { Pokemon, Type } = require('../models');
 
 const typesController = {
+    
 
     typesPage: async (req, res) => {
-        const allTypes = await dataMapper.getAllTypes();
-        res.render('types', {allTypes});
+        try {
+            const allTypes = await Type.findAll();
+            res.render('types', {allTypes});
+        } catch (error) {
+            console.log(error); 
+        }
     },
 
     pokemonByType: async (req, res) => {
-        const type_id = req.params.typeId
+        try {
+            const id = req.params.typeId;
 
-        const allPokemon = await dataMapper.getPokemonByTypes(type_id);
+            const response = await Type.findByPk(id,{
+                include: ['pokemons']
+            });
+            const allPokemon = response.pokemons;
+            
+            res.render('listPokemon', { allPokemon });
+        } catch (error) {
+            console.log(error); 
+        }
         
-        res.render('listPokemon', {allPokemon});
     }
 }
 
