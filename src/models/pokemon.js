@@ -1,6 +1,6 @@
 const {
     Model,
-    DataTypes 
+    DataTypes,
 } = require('sequelize');
 
 const sequelize = require('../database.js');

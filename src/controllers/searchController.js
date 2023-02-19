@@ -1,20 +1,26 @@
-const dataMapper = require('../dataMapper/dataMapper.js');
+const { Pokemon, Type } = require('../models');
+const { Op } = require("sequelize");
 
 const searchController = {
 
     searchPage: (req, res) => {
-
         res.render('searchPage');
 
     },
 
     searchResults: async (req, res) => {
 
-        const nameSearched = req.body.name;
+        const nom = req.body.name;
 
-        const capitalizeFirstLetter = nameSearched.charAt(0).toUpperCase() + nameSearched.slice(1);
+        const capitalizeFirstLetter = nom.charAt(0).toUpperCase() + nom.slice(1);
 
-        const allPokemon = await dataMapper.getPokemonByName(capitalizeFirstLetter);
+        const allPokemon = await Pokemon.findAll({
+            where: {
+                nom: {
+                    [Op.startsWith]: `${capitalizeFirstLetter}`
+                }
+            }
+        })
 
         res.render('listPokemon', {allPokemon});
     }

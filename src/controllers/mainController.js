@@ -3,8 +3,8 @@ const { Pokemon, Type } = require('../models');
 const mainController = {
 
     homePage: async (req, res) => {
-        try {
 
+        try {
             const allPokemon = await Pokemon.findAll({
                 includes: ['pokemons']
             });
@@ -15,6 +15,7 @@ const mainController = {
     },
 
     detailPokemon: async (req, res) => {
+        
         try {
         const numero = req.params.numero;
 
