@@ -3,11 +3,6 @@ const { Op } = require("sequelize");
 
 const searchController = {
 
-    searchPage: (req, res) => {
-        res.render('searchPage');
-
-    },
-
     searchResults: async (req, res) => {
 
         const nom = req.body.name;

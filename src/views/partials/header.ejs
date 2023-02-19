@@ -10,14 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
 
     <header class="header">
+        
         <h1 class="header__title"><a class="header__title" href="/">Pokédex</a></h1>
+        <div class="search">
+            <div class="icon"></div>
+            <form class="input" action="/search/results" method="post">
+                <input id="mysearch" type="text" name="name" placeholder="Rerchercher" required>
+                <button type="submit">Search</button>
+            </form>
+            <span class="clear"></span>
+
+        </div>
+        
         <nav class="header__nav">
             <a class="nav__link" href="/">Liste</a>
             <a class="nav__link"  href="/types">Types</a>
-            <a class="nav__link"  href="/search">Recherche</a>
         </nav>
     </header>
