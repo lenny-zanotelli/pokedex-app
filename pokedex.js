@@ -11,6 +11,7 @@ app.set('views', 'src/views');
 
 app.use(express.static('public'));
 
+// Middleware for parsing incoming requests with urlencoded payloads
 app.use(express.urlencoded({
     extended: true
 }));

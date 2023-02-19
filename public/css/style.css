@@ -52,7 +52,9 @@ body {
 .card {
     border-radius: 35px;
     background: rgb(111,3,3);
-    background: radial-gradient(circle, rgba(111,3,3,1) 0%, rgba(163,68,68,1) 50%, rgba(121,49,49,1) 100%);
+    background: radial-gradient(circle, rgba(111,3,3,1) 0%,
+     rgba(163,68,68,1) 50%,
+      rgba(121,49,49,1) 100%);
     /* background-color: rgba(152,44,44,255); */
     margin: 0.5rem;    
 }
@@ -109,8 +111,6 @@ body {
     background-color: rgba(152,44,44,255);
     margin: 1rem;
     padding: 1rem;
-
-
 
     width: 100vw;
 }
@@ -205,4 +205,43 @@ body {
     color: rgb(198, 198, 198);
     transition: 150ms ease-in-out 150ms;
 }
+
+
+/* TYPES PAGE */
+
+.types-container {
+    margin-left: 1rem;
+}
+
+.types-title {
+    color: rgb(231, 231, 231);
+    font-size: 2em;
+    margin: 2rem 0 2rem auto;
+}
+
+.types__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+
+.card__link {
+    font-size: 2em;
+    min-width: 19%;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 0.5rem;
+    
+}
+
+
+
+
+
+
+
+
 
