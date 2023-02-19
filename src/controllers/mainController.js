@@ -11,19 +11,29 @@ const mainController = {
             res.render('listPokemon', {allPokemon});
         } catch (error) {
             console.log(error)
-            
         }
-         
     },
 
     detailPokemon: async (req, res) => {
-
+        try {
         const numero = req.params.numero;
 
-        const onePokemon = await dataMapper.getOnePokemon(numero);
-        const pokemonType = await dataMapper.getPokemonType(numero);
+        const details = await Pokemon.findByPk(numero, {
+            include: [
+                { association: 'types' } 
+            ]
+        });
+        console.log(details.types[1]);
+        res.render('detailsPokemon', { details });
+            
+        } catch (error) {
+            console.log(error);
+        }
 
-        res.render('detailsPokemon', {onePokemon, pokemonType});
+        // const onePokemon = await dataMapper.getOnePokemon(numero);
+        // const pokemonType = await dataMapper.getPokemonType(numero);
+
+
     },
 
 

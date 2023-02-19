@@ -2,18 +2,18 @@
 
     <main class="detailsPokemon-container">
    
-        <h1 class="detailsPokemon-container__title">Détails de <%=onePokemon.nom %> </h1>
+        <h1 class="detailsPokemon-container__title">Détails de <%=details.nom %> </h1>
 
         
             <div class="detailsPokemon-card">
-                <img class="detailsPokemon-card__img" src="/img/<%= onePokemon.numero %>.png" alt="illustration de <%= onePokemon.nom %>">
+                <img class="detailsPokemon-card__img" src="/img/<%= details.numero %>.png" alt="illustration de <%= details.nom %>">
 
                 <div class="stats-card">
-                    <h3 class="stats-card__pokemon-name">#<%= onePokemon.numero %> <%= onePokemon.nom %></h3>
+                    <h3 class="stats-card__pokemon-name">#<%= details.numero %> <%= details.nom %></h3>
 
                     <div class="stats-card__types">
-                        <% for(const types of pokemonType){ %> 
-                        <p class="stats-card__type" style="background-color: #<%= types.color%>"><a class="stats-card__type-link" href="/types/<%= types.id %> "><%= types.name %></a> </p>
+                        <% for(const elem of details.types){ %> 
+                        <p class="stats-card__type" style="background-color: #<%= elem.color%>"><a class="stats-card__type-link" href="/types/<%= elem.id %> "><%= elem.name %></a> </p>
                         <% } %> 
                      </div>
                 
@@ -22,43 +22,43 @@
                     <ul class="stats-card_body">
                         <li class="stats-card__stats">
                             <span class="stats-card__stats-copy">PV</span> 
-                            <span class="stats-card__number"><%=  onePokemon.pv%></span>
-                            <progress class="stats-card__progress-bar" max="255"  value="<%= onePokemon.pv %>"></progress>
+                            <span class="stats-card__number"><%=  details.pv%></span>
+                            <progress class="stats-card__progress-bar" max="255"  value="<%= details.pv %>"></progress>
                         
                         </li>
 
                         <li class="stats-card__stats">
                             <span class="stats-card__stats-copy">Attaque</span> 
-                            <span class="stats-card__number"><%=  onePokemon.attaque%></span>
-                            <progress class="stats-card__progress-bar" max="255"  value="<%= onePokemon.attaque %>"></progress>
+                            <span class="stats-card__number"><%=  details.attaque%></span>
+                            <progress class="stats-card__progress-bar" max="255"  value="<%= details.attaque %>"></progress>
                         
                         </li>
 
                         <li class="stats-card__stats">
                             <span class="stats-card__stats-copy">Défense</span> 
-                            <span class="stats-card__number"><%=  onePokemon.defense%></span>
-                            <progress class="stats-card__progress-bar" max="255"  value="<%= onePokemon.defense %>"></progress>
+                            <span class="stats-card__number"><%=  details.defense%></span>
+                            <progress class="stats-card__progress-bar" max="255"  value="<%= details.defense %>"></progress>
                         
                         </li>
 
                         <li class="stats-card__stats">
                             <span class="stats-card__stats-copy">Attaque Spé.</span> 
-                            <span class="stats-card__number"><%=  onePokemon.attaque_spe%></span>
-                            <progress class="stats-card__progress-bar" max="255"  value="<%= onePokemon.attaque_spe %>"></progress>
+                            <span class="stats-card__number"><%=  details.attaque_spe%></span>
+                            <progress class="stats-card__progress-bar" max="255"  value="<%= details.attaque_spe %>"></progress>
                         
                         </li>
 
                         <li class="stats-card__stats">
                             <span class="stats-card__stats-copy">Défense Spé.</span> 
-                            <span class="stats-card__number"><%=  onePokemon.defense_spe%></span>
-                            <progress class="stats-card__progress-bar" max="255"  value="<%= onePokemon.defense_spe %>"></progress>
+                            <span class="stats-card__number"><%=  details.defense_spe%></span>
+                            <progress class="stats-card__progress-bar" max="255"  value="<%= details.defense_spe %>"></progress>
                         
                         </li>
 
                         <li class="stats-card__stats">
                             <span class="stats-card__stats-copy">Vitesse</span> 
-                            <span class="stats-card__number"><%=  onePokemon.vitesse%></span>
-                            <progress class="stats-card__progress-bar" max="255" value="<%= onePokemon.vitesse %>"></progress>
+                            <span class="stats-card__number"><%=  details.vitesse%></span>
+                            <progress class="stats-card__progress-bar" max="255" value="<%= details.vitesse %>"></progress>
     
                         </li>
 

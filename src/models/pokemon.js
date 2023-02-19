@@ -38,6 +38,7 @@ Pokemon.init({
     },
     numero: {
         type: DataTypes.INTEGER,
+        primaryKey: true,
         allowNull: false
     } 
     }, {
