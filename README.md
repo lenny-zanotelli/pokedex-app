@@ -1,45 +1,78 @@
-# Pokédex
+# Pokedex-App with NodeJS
 
-Apprentis professeurs Chen, j'ai une requête pour vous ! Je souhaiterais un pokédex tout beau, tout neuf !
+## Table of Contents
+- [Pokedex-App with NodeJS](#pokedex-app-with-nodejs)
+  - [Table of Contents](#table-of-contents)
+  - [General Information](#general-information)
+  - [Technologies Used](#technologies-used)
+  - [Screenshots](#screenshots)
+    - [Page List](#page-list)
+    - [Types Page](#types-page)
+    - [Search Bar \& Search Results](#search-bar--search-results)
+  - [Setup](#setup)
+  - [Usage](#usage)
+  - [Project Status](#project-status)
+  - [Room for Improvement](#room-for-improvement)
+  - [Acknowledgements](#acknowledgements)
+  - [Contact](#contact)
 
-Un pokédex, est une sorte de dictionnaire de tous les pokémon (petites créatures fictives et adorables). Ces derniers peuvent se battre
-et disposent de caractéristiques de combat appelées statistiques. Chaque pokémon possède aussi un ou deux types (plante, roche, feu...).
 
-Vous aurez besoin pour cette mission des outils suivants :
-- NodeJS
-- PostGreSQL
-- HTML et CSS
-- npm
-- express et ses copains
 
-Une base de données à importer vous est fournie à la racine du projet : `pokedex.sql`. Elle contient la liste des pokémon et leurs types. Vous n'avez pas à la modifier.
+## General Information
+  This a node.js web application powered by Express that provides views and informations about 1st Gen. Pokémon.
+  I created this application to train on new concepts learned in class.
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Instructions
 
-Voici la liste des pages à faire, vous avez un aperçu de chacune dans le dossier résultat :
+## Technologies Used
+- EJS - version 3.1.8
+- Postgres - version 12.6
+- Node JS - version 15.12
+- Express - version 4.18.2
+- Sequelize - version 6.28.0
 
-- Une page d'accueil qui liste tous les pokémon de la base (home.png)
-- Une page détail d'un pokémon qui affiche son type et ses stats (detail.png)
+## Screenshots
 
-La police utilisée est Bree Serif sur Google Fonts. Pour les couleurs, utilisez une pipette :wink:. Pour celles des types, elle est fournie dans la base.
+### Page List
+![Page List](./screenshot/liste_page.png)
 
-## Par où commencer ?
+### Types Page
+![Types Page](./screenshot/types_page.png)
 
-Voilà quelques pistes pour vous aider :
+### Search Bar & Search Results
+![Search Bar](./screenshot/search_bar.png)
+![Search Results](./screenshot/search_results.png)
 
-- Commencez par installer express, pg, et toute autre dépendance nécessaire avec npm
-- Mettez en place les dossiers nécessaires (#SoC !)
-- Vous aurez besoin d'un controller principal (mainController.js)
-- Il y a deux routes à créer
-- Pour récupérer les types d'un pokémon, il faut utiliser une jointure sur la table `pokemon_type`
-- Les images sont déjà prêtes et portent le nom du numéro du pokémon dans le dossier `public/img`
-- Pour les barres de statistiques, la valeur maximale est de 255. On peut donc utiliser un produit en croix pour le remplissage :wink:
 
-## Bonus
+## Setup
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
+Create an `.env` file and change the data necessary for the connection.
+You must create and import the database present in the 'data' folder. 
 
-Je veux ajouter une fonctionnalité : récupérer des pokémons selon leur type.
+## Usage
+After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
 
-Il nous faudra donc :
+Once the dependencies are installed and Database configure, you can run  `npm run dev` to start the application. You will then be able to access it at localhost:3000
 
-- Une page qui liste les types de la base (types.png) quand on clique sur l'un on arrive sur la page suivante
-- Une page qui liste les pokémon filtrés par le type cliqué sur la page précédente (electrik.png)
+## Project Status
+Project is: _in progress_
+
+
+## Room for Improvement
+
+Room for improvement:
+- Pokemons of all generation
+- Better Styling ?
+
+To do:
+- Using the Pokemon API
+
+
+## Acknowledgements
+Give credit here.
+- This project was inspired by Ecole O'Clock
+
+
+## Contact
+Developed by [@lenny-zanotelli](https://www.linkedin.com/in/lenny-zanotelli/) - feel free to contact me!
+
