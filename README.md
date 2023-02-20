@@ -1,11 +1,8 @@
 # Pokedex-App with NodeJS
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
@@ -25,16 +22,9 @@
 ## Technologies Used
 - EJS - version 3.1.8
 - Postgres - version 12.6
+- Node JS - version 15.12
 - Express - version 4.18.2
 - Sequelize - version 6.28.0
-
-
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -42,17 +32,14 @@ List the ready features here:
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
+Create an `.env` file and change the data necessary for the connection.
+You must create and import the database present in the 'data' folder. 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
 
-`write-your-code-here`
-
+Once the dependencies are installed and Database configure, you can run  `npm start` to start the application. You will then be able to access it at localhost:3000
 
 ## Project Status
 Project is: _in progress_
@@ -77,9 +64,3 @@ Give credit here.
 ## Contact
 Developed by [@lenny-zanotelli](https://www.linkedin.com/in/lenny-zanotelli/) - feel free to contact me!
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
