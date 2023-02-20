@@ -21,7 +21,6 @@
 ## General Information
   This a node.js web application powered by Express that provides views and informations about 1st Gen. Pokémon.
   I created this application to train on new concepts learned in class.
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
