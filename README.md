@@ -1,45 +1,85 @@
-# Pokédex
+# Pokedex-App with NodeJS
+> Outline a brief description of your project.
+> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
-Apprentis professeurs Chen, j'ai une requête pour vous ! Je souhaiterais un pokédex tout beau, tout neuf !
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-Un pokédex, est une sorte de dictionnaire de tous les pokémon (petites créatures fictives et adorables). Ces derniers peuvent se battre
-et disposent de caractéristiques de combat appelées statistiques. Chaque pokémon possède aussi un ou deux types (plante, roche, feu...).
 
-Vous aurez besoin pour cette mission des outils suivants :
-- NodeJS
-- PostGreSQL
-- HTML et CSS
-- npm
-- express et ses copains
+## General Information
+  This a node.js web application powered by Express that provides views and informations about 1st Gen. Pokémon.
+  I created this application to train on new concepts learned in class.
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-Une base de données à importer vous est fournie à la racine du projet : `pokedex.sql`. Elle contient la liste des pokémon et leurs types. Vous n'avez pas à la modifier.
 
-## Instructions
+## Technologies Used
+- EJS - version 3.1.8
+- Postgres - version 12.6
+- Express - version 4.18.2
+- Sequelize - version 6.28.0
 
-Voici la liste des pages à faire, vous avez un aperçu de chacune dans le dossier résultat :
 
-- Une page d'accueil qui liste tous les pokémon de la base (home.png)
-- Une page détail d'un pokémon qui affiche son type et ses stats (detail.png)
+## Features
+List the ready features here:
+- Awesome feature 1
+- Awesome feature 2
+- Awesome feature 3
 
-La police utilisée est Bree Serif sur Google Fonts. Pour les couleurs, utilisez une pipette :wink:. Pour celles des types, elle est fournie dans la base.
 
-## Par où commencer ?
+## Screenshots
+![Example screenshot](./img/screenshot.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-Voilà quelques pistes pour vous aider :
 
-- Commencez par installer express, pg, et toute autre dépendance nécessaire avec npm
-- Mettez en place les dossiers nécessaires (#SoC !)
-- Vous aurez besoin d'un controller principal (mainController.js)
-- Il y a deux routes à créer
-- Pour récupérer les types d'un pokémon, il faut utiliser une jointure sur la table `pokemon_type`
-- Les images sont déjà prêtes et portent le nom du numéro du pokémon dans le dossier `public/img`
-- Pour les barres de statistiques, la valeur maximale est de 255. On peut donc utiliser un produit en croix pour le remplissage :wink:
+## Setup
+What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-## Bonus
+Proceed to describe how to install / setup one's local environment / get started with the project.
 
-Je veux ajouter une fonctionnalité : récupérer des pokémons selon leur type.
 
-Il nous faudra donc :
+## Usage
+How does one go about using it?
+Provide various use cases and code examples here.
 
-- Une page qui liste les types de la base (types.png) quand on clique sur l'un on arrive sur la page suivante
-- Une page qui liste les pokémon filtrés par le type cliqué sur la page précédente (electrik.png)
+`write-your-code-here`
+
+
+## Project Status
+Project is: _in progress_
+
+
+## Room for Improvement
+Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+
+Room for improvement:
+- Pokemons of all generation
+- Better Styling ?
+
+To do:
+- Using the Pokemon API
+
+
+## Acknowledgements
+Give credit here.
+- This project was inspired by Ecole O'Clock
+
+
+## Contact
+Developed by [@lenny-zanotelli](https://www.linkedin.com/in/lenny-zanotelli/) - feel free to contact me!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->
