@@ -1,4 +1,4 @@
-# Pokedex-App with NodeJS
+# Pokedex-App with Express/PG/EJS
 
 ## Table of Contents
 - [Pokedex-App with NodeJS](#pokedex-app-with-nodejs)
@@ -19,7 +19,7 @@
 
 
 ## General Information
-  This a node.js web application powered by Express that provides views and informations about 1st Gen. Pokémon.
+  This a node.js web application powered by Express, Postgres and EJS that provides views and informations about 1st Gen. Pokémon.
   I created this application to train on new concepts learned in class.
 
 
