@@ -61,7 +61,7 @@ Project is: _in progress_
 
 Room for improvement:
 - Pokemons of all generation
-- Better Styling ?
+- Responsive for other devices
 
 To do:
 - Using the Pokemon API
