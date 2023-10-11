@@ -9,8 +9,6 @@ Pokemon.belongsToMany(Type, {
     through: 'pokemon_type',
     foreignKey: 'pokemon_numero',
     otherKey: 'type_id'
-
-
 });
 
 Type.belongsToMany(Pokemon, {

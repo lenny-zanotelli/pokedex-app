@@ -1,0 +1,21 @@
+{
+  "name": "pokedex-app",
+  "version": "1.0.0",
+  "description": "## Table of Contents - [Pokedex-App with NodeJS](#pokedex-app-with-nodejs)   - [Table of Contents](#table-of-contents)   - [General Information](#general-information)   - [Technologies Used](#technologies-used)   - [Screenshots](#screenshots)     - [Page List](#page-list)     - [Types Page](#types-page)     - [Search Bar \\& Search Results](#search-bar--search-results)   - [Setup](#setup)   - [Usage](#usage)   - [Project Status](#project-status)   - [Room for Improvement](#room-for-improvement)   - [Acknowledgements](#acknowledgements)   - [Contact](#contact)",
+  "main": "pokedex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3",
+    "sequelize": "^6.33.0",
+    "sqlite3": "^5.1.6"
+  }
+}

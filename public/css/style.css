@@ -21,6 +21,14 @@ body {
     text-decoration: none; 
 }
 
+@media only screen and (max-width: 767px) {
+    .header__title {
+        display: none;
+    }
+}
+
+
+
 .header__title:hover {
     color: brown;
 }
@@ -348,14 +356,4 @@ body {
     transform: rotate(315deg);
 
 }
-
-
-
-
-
-
-
-
-
-
 

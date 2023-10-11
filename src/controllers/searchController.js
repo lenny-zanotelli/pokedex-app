@@ -1,4 +1,4 @@
-const { Pokemon, Type } = require('../models');
+const { Pokemon } = require('../models');
 const { Op } = require("sequelize");
 
 const searchController = {
